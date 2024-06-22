@@ -37,7 +37,8 @@
   background: #1f2023dc;
   position: fixed;
   bottom: 2%;
-  display: flex;
+  display: none;
+  transition: 0.5s ease-in-out;
   border: 1px solid #3b3b3a;
   clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px);
   flex-direction: row;
@@ -46,6 +47,10 @@
   padding: 15px;
   width: fit-content;
   border-radius: 3px;
+}
+
+.mobileBar.show {
+  display: flex;
 }
 .plusCont {
   border: 1px solid #6f20f7;
