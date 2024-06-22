@@ -1,5 +1,5 @@
+import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-content',
@@ -8,24 +8,23 @@ import { Component, OnInit } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
 })
-export class ContentComponent implements OnInit {
+export class ContentComponent implements AfterViewInit {
   constructor() {}
-  ngOnInit(): void {
-    document.addEventListener('DOMContentLoaded', function () {
-      const video = document.querySelector(
-        '.background-video'
-      ) as HTMLVideoElement | null;
-      if (video) {
-        video.addEventListener('contextmenu', function (event: MouseEvent) {
-          event.preventDefault();
-        });
 
-        video.play().catch((error) => {
-          // If autoplay fails, try to play the video again with muted attribute.
-          video.muted = true;
-          video.play();
-        });
-      }
+  ngAfterViewInit(): void {
+    const videos = document.querySelectorAll(
+      '.background-video'
+    ) as NodeListOf<HTMLVideoElement>;
+    videos.forEach((video) => {
+      video.addEventListener('contextmenu', (event: MouseEvent) => {
+        event.preventDefault();
+      });
+
+      video.play().catch((error) => {
+        // If autoplay fails, try to play the video again with muted attribute.
+        video.muted = true;
+        video.play();
+      });
     });
   }
 }
