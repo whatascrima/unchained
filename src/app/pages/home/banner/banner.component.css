@@ -187,6 +187,9 @@
   }
 }
 @media (max-width: 720px) {
+  .icn {
+    display: none;
+  }
   .barOne {
     display: none;
   }
