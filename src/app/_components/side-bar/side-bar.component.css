@@ -1,0 +1,66 @@
+.sideBar {
+  background-color: #0d0d0d;
+  padding-left: 1rem;
+}
+.firstSection {
+  background-color: #212025;
+  display: flex;
+  clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px);
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 3px;
+}
+.logoSection {
+  margin-bottom: 10px;
+  background-color: #212025;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%);
+  padding: 21px;
+  width: fit-content;
+
+  border-radius: 3px;
+}
+.secondSection {
+  background-color: #212025;
+  margin-top: 10px;
+  display: flex;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%);
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  padding-bottom: 10px;
+  width: fit-content;
+
+  border-radius: 3px;
+}
+.sideContent {
+  padding-top: 0.7rem;
+}
+.imageContainer {
+  margin-bottom: 10px;
+}
+.innerSection {
+  background-color: #0d0d0d;
+  padding: 20px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%
+  );
+}
+.gameImage {
+  width: 50px;
+  object-fit: cover;
+  height: 50px;
+  border-radius: 5px;
+}
+.plusCont {
+  border: 1px solid #6f20f7;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+}
