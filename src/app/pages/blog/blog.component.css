@@ -1,5 +1,5 @@
 .pageContainer {
-  height: 280vh;
+  height: 120rem;
   margin: 0;
   padding: 0;
   background-color: #0d0d0d;
@@ -179,12 +179,12 @@
     display: block;
   }
   .pageContainer {
-    height: 494vh;
+    height: 210rem;
   }
 }
 @media only screen and (min-width: 799px) and (max-width: 938px) {
   .pageContainer {
-    height: 280vh;
+    height: 123rem;
   }
 }
 @media only screen and (min-width: 721px) and (max-width: 799px) {
@@ -192,6 +192,6 @@
     display: block;
   }
   .pageContainer {
-    height: 500vh;
+    height: 210rem;
   }
 }
