@@ -67,3 +67,8 @@
     height: 100vh;
   }
 }
+@media (max-width: 500px) {
+  .formCont {
+    width: 95vw;
+  }
+}
