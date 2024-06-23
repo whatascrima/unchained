@@ -8,6 +8,7 @@ import { CollectionsModule } from './pages/collections/collections.module';
 import { PreloaderComponent } from './_components/preloader/preloader.component';
 import { LoginModule } from './pages/login/login.module';
 import { RegisterModule } from './pages/register/register.module';
+import { BlogModule } from './pages/blog/blog.module';
 
 @NgModule({
   declarations: [AppComponent, PreloaderComponent],
@@ -18,6 +19,7 @@ import { RegisterModule } from './pages/register/register.module';
     CollectionsModule,
     LoginModule,
     RegisterModule,
+    BlogModule,
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
