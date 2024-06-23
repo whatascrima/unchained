@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
 import { CollectionsModule } from './pages/collections/collections.module';
+import { PreloaderComponent } from './_components/preloader/preloader.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PreloaderComponent],
   imports: [BrowserModule, AppRoutingModule, HomeModule, CollectionsModule],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
