@@ -13,8 +13,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     initFlowbite();
 
-    setTimeout(() => {
+    window.onload = () => {
       this.showPreloader = false;
-    }, 3000); // Show preloader for 3 seconds
+    };
   }
 }

@@ -52,13 +52,58 @@
 .mobileBar.show {
   display: flex;
 }
-.plusCont {
-  border: 1px solid #6f20f7;
+.plusC {
+  background-color: #0d0d0d;
   padding: 12px;
-  background-color: #6f20f7;
+  cursor: pointer;
+  border-radius: 5px;
+  /* clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%); */
+
+  width: fit-content;
+}
+.plusCo {
+  background-color: #54d54a;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+
+  width: fit-content;
+}
+.plusCont {
+  border: 1px solid yellow;
+  padding: 12px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 5px));
+  background-color: yellow;
   cursor: pointer;
   border-radius: 5px;
   width: fit-content;
+}
+.plusCon {
+  border: 1px solid #fff;
+  padding: 12px;
+  /* clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%
+  ); */
+
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+}
+.imageContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navName {
+  color: #f2f2f2;
+  font-size: 13px;
+  font-family: "Audiowide", sans-serif;
 }
 .gameImage {
   width: 50px;
