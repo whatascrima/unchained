@@ -1,5 +1,5 @@
 .pageContainer {
-  height: 120rem;
+  height: 129rem;
   margin: 0;
   padding: 0;
   background-color: #0d0d0d;
@@ -39,6 +39,15 @@
   color: #fff;
   flex-direction: column;
   font-family: "Audiowide", sans-serif;
+}
+.blogHd {
+  text-align: center;
+  background-image: linear-gradient(45deg, #6f20f7, #ffff);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1.5rem;
+  margin-bottom: 4%;
+  margin-top: 5%;
 }
 .banner {
   position: fixed;
@@ -155,7 +164,92 @@
   background-color: #fff;
   color: #6f20f7;
 }
+
+.mobileBar {
+  background: #1f2023dc;
+  position: fixed;
+  bottom: 2%;
+  display: none;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #3b3b3a;
+  clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px);
+  flex-direction: row;
+  gap: 10px;
+  z-index: 2;
+  padding: 15px;
+  width: fit-content;
+  border-radius: 3px;
+}
+
+.mobileBar.show {
+  display: flex;
+}
+.plusC {
+  background-color: #0d0d0d;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  /* clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%); */
+
+  width: fit-content;
+}
+.plusCo {
+  background-color: #54d54a;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+
+  width: fit-content;
+}
+.plusCont {
+  border: 1px solid yellow;
+  padding: 12px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 5px));
+  background-color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+}
+.plusCon {
+  border: 1px solid #fff;
+  padding: 12px;
+  /* clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%
+  ); */
+
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+}
+.imageContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navName {
+  color: #f2f2f2;
+  font-size: 13px;
+  font-family: "Audiowide", sans-serif;
+}
+.mobile {
+  display: none;
+}
 @media (max-width: 720px) {
+  .navSection {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+
   .icn {
     display: none;
   }
@@ -179,12 +273,12 @@
     display: block;
   }
   .pageContainer {
-    height: 212rem;
+    height: 214rem;
   }
 }
 @media only screen and (min-width: 799px) and (max-width: 938px) {
   .pageContainer {
-    height: 123rem;
+    height: 125rem;
   }
 }
 @media only screen and (min-width: 721px) and (max-width: 799px) {
@@ -192,6 +286,6 @@
     display: block;
   }
   .pageContainer {
-    height: 210rem;
+    height: 212rem;
   }
 }

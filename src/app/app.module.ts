@@ -10,6 +10,8 @@ import { LoginModule } from './pages/login/login.module';
 import { RegisterModule } from './pages/register/register.module';
 import { BlogModule } from './pages/blog/blog.module';
 
+import { MarketplaceModule } from './pages/marketplace/marketplace.module';
+
 @NgModule({
   declarations: [AppComponent, PreloaderComponent],
   imports: [
@@ -19,6 +21,7 @@ import { BlogModule } from './pages/blog/blog.module';
     CollectionsModule,
     LoginModule,
     RegisterModule,
+    MarketplaceModule,
     BlogModule,
   ],
   providers: [],

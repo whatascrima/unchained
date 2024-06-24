@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-blog',
@@ -6,6 +6,9 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.css'],
 })
 export class BlogComponent implements OnInit, AfterViewInit {
+  showMobileBar = true;
+  private scrollTimeout: any;
+
   ngOnInit(): void {
     this.bannerScroll();
   }
@@ -25,6 +28,20 @@ export class BlogComponent implements OnInit, AfterViewInit {
         banner.style.opacity = '0';
       }
     });
+  }
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    if (this.scrollTimeout) {
+      clearTimeout(this.scrollTimeout);
+    }
+
+    // Hide the mobile bar while scrolling
+    this.showMobileBar = false;
+
+    // Show the mobile bar after 200ms of no scrolling
+    this.scrollTimeout = setTimeout(() => {
+      this.showMobileBar = true;
+    }, 200);
   }
 
   ngAfterViewInit(): void {

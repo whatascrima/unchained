@@ -1,0 +1,28 @@
+.product {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+  background: #1f20238e;
+  margin: 4% 4% 3% 3%;
+  border: 1px solid #3b3b3a;
+  border-radius: 15px;
+  font-family: "Audiowide", sans-serif;
+}
+.productContainer {
+  display: grid;
+  grid-template: 1fr/1fr 1fr 1fr 1fr;
+  padding: 1%;
+}
+
+.productBox {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+  background: #1f2023b0;
+  border: 1px solid #3b3b3a;
+  padding: 10px;
+}
+.background-video {
+  border-radius: 5px;
+}
+@media (max-width: 720px) {
+  .productContainer {
+    display: block;
+  }
+}
