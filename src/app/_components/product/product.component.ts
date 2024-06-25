@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component } from '@angular/core';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css'],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
 })
 export class ProductComponent implements AfterViewInit {
   constructor() {}
@@ -26,6 +27,26 @@ export class ProductComponent implements AfterViewInit {
       productName: 'The uncahined - Part III',
       produtPrice: 400,
       percentageDiscount: 5,
+    },
+    {
+      productName: 'The uncahined - Part IV',
+      produtPrice: 500,
+      percentageDiscount: 15,
+    },
+    {
+      productName: 'The uncahined - Part IV',
+      produtPrice: 500,
+      percentageDiscount: 15,
+    },
+    {
+      productName: 'The uncahined - Part IV',
+      produtPrice: 500,
+      percentageDiscount: 15,
+    },
+    {
+      productName: 'The uncahined - Part IV',
+      produtPrice: 500,
+      percentageDiscount: 15,
     },
     {
       productName: 'The uncahined - Part IV',

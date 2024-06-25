@@ -8,6 +8,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { MarketplaceComponent } from './pages/marketplace/marketplace.component';
 import { BlogReadModule } from './pages/blog-read/blog-read.module';
 import { BlogReadComponent } from './pages/blog-read/blog-read.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'blog-read',
         component: BlogReadComponent,
+      },
+      {
+        path: 'product-details',
+        component: ProductDetailsComponent,
       },
     ],
   },

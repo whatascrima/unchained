@@ -1,0 +1,11 @@
+.prodDet {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px);
+  border: 1px solid #3b3b3a;
+  font-family: "Audiowide", sans-serif;
+  padding: 4%;
+  color: #fff;
+  border-radius: 15px;
+  background: #1f2023dc;
+}

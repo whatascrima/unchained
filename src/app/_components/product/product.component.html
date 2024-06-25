@@ -37,7 +37,11 @@
   </form>
 
   <div class="productContainer">
-    <div class="product" *ngFor="let product of products">
+    <div
+      class="product"
+      *ngFor="let product of products"
+      routerLink="/product-details"
+    >
       <div class="w-full border-gray-200 rounded-lg productBox">
         <video
           autoplay
@@ -126,7 +130,7 @@
             </div>
           </div>
 
-          <a href="#">
+          <a routerLink="/product-details">
             <h5 class="text-xl tracking-tight text-customGreen">
               {{ product.productName }}
             </h5>
