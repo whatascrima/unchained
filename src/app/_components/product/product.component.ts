@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-product',
@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
 })
-export class ProductComponent {
+export class ProductComponent implements AfterViewInit {
   constructor() {}
 
   products = [
@@ -33,4 +33,20 @@ export class ProductComponent {
       percentageDiscount: 15,
     },
   ];
+
+  ngAfterViewInit(): void {
+    const videos = document.querySelectorAll(
+      '.background-video'
+    ) as NodeListOf<HTMLVideoElement>;
+    videos.forEach((video) => {
+      video.addEventListener('contextmenu', (event: MouseEvent) => {
+        event.preventDefault();
+      });
+
+      video.play().catch((error) => {
+        video.muted = true;
+        video.play();
+      });
+    });
+  }
 }

@@ -1,0 +1,19 @@
+.blogTemp {
+  margin-top: 7rem;
+  clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px);
+  border: 1px solid #3b3b3a;
+  font-family: "Audiowide", sans-serif;
+  padding: 4%;
+  color: #fff;
+  border-radius: 15px;
+  background: #1f2023dc;
+  margin-bottom: 4rem;
+}
+.background-video {
+  border: 1px solid #3b3b3a;
+  height: 15rem;
+  object-fit: cover;
+}
+.bgBlack {
+  background: #1f2023b9;
+}

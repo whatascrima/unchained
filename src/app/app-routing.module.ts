@@ -6,6 +6,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { MarketplaceComponent } from './pages/marketplace/marketplace.component';
+import { BlogReadModule } from './pages/blog-read/blog-read.module';
+import { BlogReadComponent } from './pages/blog-read/blog-read.component';
 
 const routes: Routes = [
   {
@@ -15,6 +17,10 @@ const routes: Routes = [
       {
         path: '',
         component: CollectionsComponent,
+      },
+      {
+        path: 'blog-read',
+        component: BlogReadComponent,
       },
     ],
   },

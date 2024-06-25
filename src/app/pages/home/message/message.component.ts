@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-message',
   templateUrl: './message.component.html',
   styleUrls: ['./message.component.css'],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
 })
 export class MessageComponent {
   showMobileBar = true;

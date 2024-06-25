@@ -11,6 +11,7 @@ import { RegisterModule } from './pages/register/register.module';
 import { BlogModule } from './pages/blog/blog.module';
 
 import { MarketplaceModule } from './pages/marketplace/marketplace.module';
+import { BlogReadModule } from './pages/blog-read/blog-read.module';
 
 @NgModule({
   declarations: [AppComponent, PreloaderComponent],
@@ -23,6 +24,7 @@ import { MarketplaceModule } from './pages/marketplace/marketplace.module';
     RegisterModule,
     MarketplaceModule,
     BlogModule,
+    BlogReadModule,
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
